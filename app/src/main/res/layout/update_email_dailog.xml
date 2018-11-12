@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:hint="Update your Email"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/add_new">
+
+        <EditText
+            android:id="@+id/add_new_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:hint="Fill new Email"
+            android:inputType="textEmailAddress" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right|bottom">
+
+        <TextView
+            android:id="@+id/cancle_email_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:hint="Cancle"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/submit_email_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:hint="Submit"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

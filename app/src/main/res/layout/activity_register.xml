@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Register"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:src="@drawable/biguser" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:textSize="50dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+
+            <EditText
+                android:drawableStart="@drawable/user"
+                android:paddingStart="5dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/username_regis"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:background="@color/etBg"
+                android:hint=" Username"/>
+
+            <EditText
+                android:drawableStart="@drawable/login"
+                android:layout_marginTop="5dp"
+                android:id="@+id/email_regis"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:background="@color/etBg"
+                android:hint=" Email"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:drawableStart="@drawable/password"
+                android:layout_marginTop="5dp"
+                android:id="@+id/pass_regis"
+                android:background="@color/etBg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint=" Password"
+                android:paddingStart="5dp"
+                android:inputType="textPassword"/>
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/regis_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_regis"
+                android:hint="Register"
+                android:textSize="26dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

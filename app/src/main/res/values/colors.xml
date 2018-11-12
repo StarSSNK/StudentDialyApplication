@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e682f1</color>
+
+    <color name="colorPrimaryDark">#de61f7</color>
+
+    <color name="colorAccent">#FFFF4081</color>
+
+    <color name="navigColor">#fcee86</color>
+
+    <color name="etBg">#80e7c7d5</color>
+
+    <color name="tvBg">#80edefed</color>
+
+    <color name="etBg2">#80f5eaef</color>
+
+    <color name="add_bg">#fcf6ba</color>
+
+    <color name="add_new">#50ffffff</color>
+</resources>

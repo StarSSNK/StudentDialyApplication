@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_format_align_justify_black_24dp"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/nav_allTask"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_circle_black_24_1dp"
+            android:title="Profile" />
+
+    </group>
+
+    <item android:title="Education Information">
+        <menu>
+            <item
+                android:id="@+id/nav_yearSem"
+                android:title="Year and Semester" />
+            <item
+                android:id="@+id/nav_course"
+                android:title="Course" />
+            <item
+                android:id="@+id/nav_classroom"
+                android:title="Classroom" />
+        </menu>
+    </item>
+
+</menu>

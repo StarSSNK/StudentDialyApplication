@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1074598512424",
+    "firebase_url": "https://studentdailyapp.firebaseio.com",
+    "project_id": "studentdailyapp",
+    "storage_bucket": "studentdailyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074598512424:android:5f4ccb15e7694162",
+        "android_client_info": {
+          "package_name": "com.example.studentdailyapp.studentdaily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074598512424-ai452jr4d8mq3u3vvsmn4o1osm44mm7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentdailyapp.studentdaily",
+            "certificate_hash": "fc1d5bbad8c729bcdd7de78662bb4cdd34970fb9"
+          }
+        },
+        {
+          "client_id": "1074598512424-9f3ehi6i26shmdgvu585qasi078b4kvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqRGns_8-qtZFjtijllVs8n27ZxQ1djgg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074598512424-9f3ehi6i26shmdgvu585qasi078b4kvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

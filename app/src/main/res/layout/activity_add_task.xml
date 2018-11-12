@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    tools:context=".Add.AddTask">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/add_new"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:text="New Task"
+                    android:textColor="#fdfdfd"
+                    android:textSize="50dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@color/add_new"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@color/etBg2"
+                            android:gravity="center_vertical"
+                            android:text="Select type"
+                            android:textSize="20dp" />
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/type_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            app:ms_arrow_tint="@color/colorPrimaryDark"
+                            app:ms_background_color="@color/add_bg"
+                            app:ms_text_color="@android:color/black" />
+
+
+                        <EditText
+                            android:id="@+id/title_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Fill Title"
+                            android:textSize="20dp" />
+
+                        <EditText
+                            android:id="@+id/detail_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Fill Detail"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/sl_classroom"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="8dp"
+                                android:hint="select classroom"
+                                android:textSize="20dp">
+
+
+                            </AutoCompleteTextView>
+
+                            <ImageView
+                                android:id="@+id/dropdown_classr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/sl_classroom"
+                                android:layout_alignRight="@+id/sl_classroom"
+                                android:layout_alignTop="@+id/sl_classroom"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sl_datetime"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:orientation="horizontal"
+                            android:background="@color/etBg"
+                            android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/sl_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="select due date"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/sl_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint=" and time"
+                            android:textSize="20dp" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="select User define time"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                android:id="@+id/udt_spinner"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                app:ms_arrow_tint="@color/colorPrimaryDark"
+                                app:ms_background_color="@color/add_bg"
+                                app:ms_text_color="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingStart="10dp"
+                                android:gravity="center_vertical"
+                                android:text="Minutes"
+                                android:textStyle="bold"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <Button
+                                android:id="@+id/cancle_add_task"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="5"
+                                android:background="#eab4b4"
+                                android:hint="Cancle"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/submit_add_task"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:background="#dcffc1"
+                                android:hint="Submit"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

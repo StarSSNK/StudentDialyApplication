@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".Add.AddClassroom">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_shape"
+                android:gravity="center_horizontal"
+                android:text="New Classroom"
+                android:textColor="#fdfdfd"
+                android:textSize="50dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/add_new"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@color/add_new"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/room"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Fill Room"
+                            android:textSize="20dp" />
+
+
+                        <EditText
+                            android:id="@+id/building"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Fill Building"
+                            android:textSize="20dp" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/sl_course"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Select Course"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Select Period time"
+                            android:textSize="20dp" />
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/period_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="20dp"
+                            app:ms_arrow_tint="@color/colorPrimaryDark"
+                            app:ms_background_color="@color/add_bg"
+                            app:ms_text_color="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Fill Place"
+                            android:textSize="20dp" />
+
+                        <EditText
+                            android:id="@+id/teacher"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Fill Teacher"
+                            android:textSize="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/start_time_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/etBg"
+                            android:gravity="center"
+                            android:hint="select start time"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/end_time_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/etBg"
+                            android:gravity="center"
+                            android:hint="select end time"
+                            android:textSize="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/date_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/etBg"
+                            android:gravity="center"
+                            android:hint="select day"
+                            android:textSize="20dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <Button
+                                android:id="@+id/cancle_classroom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="5"
+                                android:background="#eab4b4"
+                                android:hint="Cancle"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/submit_classroom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:background="#dcffc1"
+                                android:hint="Submit"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
